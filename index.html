@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 247, 198);
+            text-align: center;
+            margin: 0;
+        }
+    header {
+        padding: 20px;
+        background-color: black;
+        color: white;
+    }
+    section {
+        padding: 20px;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .images img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .btn {
+        position: fixed;
+        bottom: 20px;
+        padding: 15px 20px;
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+    }
+        .left {
+            left: 20px;
+        }
+        .right {
+            right: 20px;
+        }
+        .card {
+            width: 250px;
+            border: 1px solid black;
+            padding: 15px;
+            margin: 20px;
+            transition: 0.3s;
+        }
+        ul,ol {
+            margin: auto;
+            width: fit-content;
+            padding: 0;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        caption {
+            margin: auto;
+            color: rgb(63, 0, 135);
+            
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        th {
+            background: red;
+            color: rgb(255, 255, 255);
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea, select {
+            padding: 8px;
+            margin: 5px;
+            width: 250px;
+        }
+        .submit-btn {
+            padding: 12px 30px;
+            background: green;
+            color: white;
+            border: none;
+            baorder-radius: 8px;
+            font-size: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover{
+            background: darkgreen;
+            transform: scale(1.05);
+        }
+
+        .btn{
+            position: fixed;
+            bottom: 20px;
+            padding: 12px 18px;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-hover{
+            background: #333;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My First Website Project</h1>
+        <p>I am Learning HTML, css, js,and building step by step</p>
+    </header>
+
+    <section>
+        <h2>My Daily Routine</h2>
+        <ul>
+            <li>Wake up</li>
+            <li>Coding</li>
+            <li>Practice</li>
+        </ul>
+    </section>
+    <hr class="top-line">
+    <!-- this is the Random image and google link -->
+     <section class="images">
+     <img src="img.jpg" alt="img1">
+
+     <img src="https://images.stockcake.com/public/5/7/7/5771eeab-e7d1-4013-903a-fd9352e30e0a_large/tech-savvy-hacker-stockcake.jpg" alt="img2">
+
+     <img src="pht.jpg" alt="img3">
+     </section>
+     <hr style="width: 400px;
+    height: 6px;
+    border: none;
+    background: black;">
+
+    <section>
+        <h2>Skills</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JSS</li>
+        </ol>
+    </section>
+     
+     <!-- subject + marks -->
+     <section>
+        <h2><u>About My self In My 10th Exam</u></h2>
+        <table>
+        <tr>
+            <th>Subject</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>73</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <td>Sst</td>
+            <td>84</td>
+        </tr>
+     </table>
+     </section>
+     <section>
+     <h1>Travel Form for our trip</h1>
+        <form action="success.html">
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label for="sectionida">
+                <input type="radio" value="Section a" name="section" id="sectionida"> Section A
+            </label>
+            <label for="sectionidb">
+                <input type="radio" value="Section b" name="section" id="sectionidb"> Section B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="Section c" name="section" id="sectionidc" class="red blue"> Section C
+            </label><br>
+            
+            <label for="foodcanteen">Want Food Canteen card</label>
+            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+            <textarea placeholder="Wht You Want to Join"></textarea><br>
+            <select>
+                <option value="Cycle"><b>Select your Vechicle</b></option>
+                <option value="Glamour">Glamour</option>
+                <option value="HF-delux">HF-Delux</option>
+                <option value="kawasiki">Kawasaki</option>
+                <option value="Platina">Platina</option>
+                <option value="Shine-Sp">Shine-sp</option>
+            </select>
+
+            <button type="submit" class="submit-btn">
+              Submit Form
+            </button>
+        </form>
+        </section>
+        
+        <!-- buttons -->
+        <a href="https://www.youtube.com" target="_blank">
+            <button class="btn left">Open Youtube</button>
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <button class="btn right">Oen Google</button>
+        </a>
+         
+        <!-- footer  -->
+
+        <h3>Made by Md Muzammil📟</h3>
+</body>
+</html>
